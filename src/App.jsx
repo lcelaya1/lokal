@@ -17,9 +17,10 @@ function App() {
               <img src="../img/False.svg" alt=""/>
               <p className="w-full text-center">Sign Up With Google</p>
             </button>
-            <div>
-              
-            </div>
+            <button className="w-52">
+              <img src="../img/google_signin_buttons/web/2x/btn_google_signin_light_normal_web@2x.png" alt="" />
+            </button>
+            <div></div>
           </div>
         </div>
       </div>
