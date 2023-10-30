@@ -1,8 +1,10 @@
 import "./index.css"
+import GoogleScriptLoader from './test.jsx';
 
 function App() {
   return (
     <body className="m-0 flex">
+      <GoogleScriptLoader />
       <div className="basis-53">
         <img className="min-h-screen object-cover object-right w-full" src="../img/vecteezy_beautiful-sunset-lighthouse-landscape-illustration_11513281.jpg" alt="" />
       </div>
@@ -17,8 +19,24 @@ function App() {
               <img src="../img/False.svg" alt=""/>
               <p className="w-full text-center">Sign Up With Google</p>
             </button>
-            <button className="w-52">
-              <img src="../img/google_signin_buttons/web/2x/btn_google_signin_light_normal_web@2x.png" alt="" />
+            <button>
+              <div id="g_id_onload"
+                  data-client_id="198566251409-uqn5adiqqn9a0lu0bnj1go7q7tc68km5.apps.googleusercontent.com"
+                  data-context="signin"
+                  data-ux_mode="popup"
+                  data-login_uri="aninchi.com"
+                  data-auto_prompt="false">
+              </div>
+
+              <div className="g_id_signin"
+                  data-type="standard"
+                  data-shape="pill"
+                  data-theme="outline"
+                  data-text="signin_with"
+                  data-size="large"
+                  data-logo_alignment="center"
+                  data-width="400">
+              </div>
             </button>
             <div></div>
           </div>
